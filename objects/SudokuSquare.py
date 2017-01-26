@@ -51,7 +51,7 @@ class SudokuSquare:
             number = ""
             self.color = (255, 255, 255)
         # print("FONTS", pygame.font.get_fonts())
-        self.font = pygame.font.SysFont('opensans', 21)
+        self.font = pygame.font.SysFont('opensans', 35)
         self.text = self.font.render(number, 1, (255, 255, 255))
         self.textpos = self.text.get_rect()
         self.textpos = self.textpos.move(offsetX + 17, offsetY + 4)
@@ -102,7 +102,7 @@ class SudokuSquare:
             number = str(number)
         else:
             number = ""
-        
+
         if self.edit == "Y":
             self.text = self.font.render(number, 1, (0, 0, 0))
             self.draw()

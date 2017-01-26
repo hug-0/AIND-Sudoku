@@ -52,7 +52,7 @@ def play(values_list):
 
         pygame.display.flip()
         pygame.display.update()
-        clock.tick(5)
+        clock.tick(20)
 
 
 if __name__ == "__main__":
